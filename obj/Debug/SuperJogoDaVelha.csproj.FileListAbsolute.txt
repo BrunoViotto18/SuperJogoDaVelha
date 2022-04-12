@@ -1,0 +1,12 @@
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\bin\Debug\SuperJogoDaVelha.exe.config
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\bin\Debug\SuperJogoDaVelha.exe
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\bin\Debug\SuperJogoDaVelha.pdb
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.csproj.AssemblyReference.cache
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.csproj.SuggestedBindingRedirects.cache
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.JogoDaVelha.resources
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.JogoDaVelhaForm.resources
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.Properties.Resources.resources
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.csproj.GenerateResource.cache
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.exe
+C:\Users\Aluno\Desktop\SuperJogoDaVelha\obj\Debug\SuperJogoDaVelha.pdb
