@@ -16,10 +16,5 @@ namespace SuperJogoDaVelha
         {
             InitializeComponent();
         }
-
-        private void jogoDaVelha1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -31,14 +31,6 @@
             this.jogoDaVelha1 = new SuperJogoDaVelha.JogoDaVelha();
             this.SuspendLayout();
             // 
-            // jogoDaVelha1
-            // 
-            this.jogoDaVelha1.Dimension = 603;
-            this.jogoDaVelha1.Location = new System.Drawing.Point(92, 61);
-            this.jogoDaVelha1.Name = "jogoDaVelha1";
-            this.jogoDaVelha1.Size = new System.Drawing.Size(603, 321);
-            this.jogoDaVelha1.TabIndex = 0;
-            // 
             // JogoDaVelhaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
