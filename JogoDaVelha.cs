@@ -62,7 +62,6 @@ namespace SuperJogoDaVelha
             this.Size = new System.Drawing.Size(578, 525);
             this.Resize += new System.EventHandler(this.JogoDaVelha_Resize);
             this.ResumeLayout(false);
-
         }
 
 
