@@ -31,12 +31,19 @@
             this.jogoDaVelha1 = new SuperJogoDaVelha.JogoDaVelha();
             this.SuspendLayout();
             // 
+            // jogoDaVelha1
+            // 
+            this.jogoDaVelha1.Location = new System.Drawing.Point(243, 104);
+            this.jogoDaVelha1.Name = "jogoDaVelha1";
+            this.jogoDaVelha1.Size = new System.Drawing.Size(400, 400);
+            this.jogoDaVelha1.TabIndex = 0;
+            // 
             // JogoDaVelhaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 633);
             this.Controls.Add(this.jogoDaVelha1);
             this.Name = "JogoDaVelhaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
