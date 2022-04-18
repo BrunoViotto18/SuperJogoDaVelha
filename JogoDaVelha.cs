@@ -37,13 +37,18 @@ namespace SuperJogoDaVelha
         private int currentUser;
         private int winner;
 
+        private string imagesPath;
+        private string xPath;
+        private string oPath;
+
         public int Winner
         {
             get => winner;
             set
             {
-                MessageBox.Show($"Vencedor: {value}");
                 winner = value;
+                if (winner == 1 || winner == 2 || winner == 0)
+                    MessageBox.Show($"Vencedor: {value}");
             }
         }
 
@@ -88,9 +93,9 @@ namespace SuperJogoDaVelha
             //
 
             // Seta a cor e tamanho dos quadrados
-            for (int i = 0; i < pictureBoxes.GetLength(0); i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < pictureBoxes.GetLength(1); j++)
+                for (int j = 0; j < 3; j++)
                 {
                     pictureBoxes[i, j].BackColor = Color.FromArgb(0, 0, 0, 0);
                     pictureBoxes[i, j].Height = this.Height * 3 / 10;
@@ -148,9 +153,9 @@ namespace SuperJogoDaVelha
             //
 
             boxes = new int[3,3];
-            for (int i = 0; i < boxes.GetLength(0); i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < boxes.GetLength(1); j++)
+                for (int j = 0; j < 3; j++)
                 {
                     boxes[i, j] = (int)box.Void;
                 }
@@ -158,6 +163,10 @@ namespace SuperJogoDaVelha
 
             currentUser = (int)box.X;
             winner = (int)box.Void;
+
+            imagesPath = "C:\\Users\\Aluno\\Desktop\\SuperJogoDaVelha\\Imagens\\";
+            oPath = imagesPath + "O.png";
+            xPath = imagesPath + "X.png";
         }
 
 
@@ -171,15 +180,7 @@ namespace SuperJogoDaVelha
             if (boxes[pbXY[0], pbXY[1]] == (int)box.X || boxes[pbXY[0], pbXY[1]] == (int)box.O)
                 return;
 
-            // Atualiza o modelo lógico
-            boxes[pbXY[0], pbXY[1]] = currentUser;
-
-            // Obtém o filename da imagem desejada
-            string filename = $"C:\\Users\\Aluno\\Desktop\\SuperJogoDaVelha\\X.png";
-            if (currentUser == (int)box.O)
-                filename = $"C:\\Users\\Aluno\\Desktop\\SuperJogoDaVelha\\O.png";
-
-            pictureBoxes[pbXY[0], pbXY[1]].Image = new Bitmap(filename);
+            userPlay(pbXY);
 
             checkEndGame();
 
@@ -187,12 +188,28 @@ namespace SuperJogoDaVelha
         }
 
 
+        // Realiza uma jogada
+        private void userPlay(int[] pbXY)
+        {
+            // Atualiza o modelo lógico
+            boxes[pbXY[0], pbXY[1]] = currentUser;
+
+            // Obtém o filename da imagem desejada
+            if (currentUser == (int)box.O)
+            {
+                pictureBoxes[pbXY[0], pbXY[1]].Image = new Bitmap(oPath);
+                return;
+            }
+            pictureBoxes[pbXY[0], pbXY[1]].Image = new Bitmap(xPath);
+        }
+
+
         // Retorna o indíce de uma PictureBox na matriz
         private int[] getPictureBoxIndex(object pb)
         {
-            for (int i = 0; i < pictureBoxes.GetLength(0); i++)
+            for (int i = 0; i < 3; i++)
             {
-                for (int j = 0; j < pictureBoxes.GetLength(1); j++)
+                for (int j = 0; j < 3; j++)
                 {
                     if (pb == pictureBoxes[i, j])
                         return new int[2] { i, j };
@@ -241,8 +258,23 @@ namespace SuperJogoDaVelha
             if (boxes[0, 0] == boxes[1, 1] && boxes[1, 1] == boxes[2, 2] || boxes[2, 0] == boxes[1, 1] && boxes[1, 1] == boxes[0, 2])
             {
                 if (boxes[1, 1] != (int)box.Void)
+                {
                     Winner = boxes[1, 1];
+                    return;
+                }
             }
+
+            // Checa se velha
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (boxes[i, j] != (int)box.O && boxes[i, j] != (int)box.X)
+                        return;
+                }
+            }
+
+            Winner = (int)box.Void;
         }
 
 
