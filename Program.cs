@@ -7,10 +7,10 @@ using System.Drawing;
 
 namespace SuperJogoDaVelha
 {
-    internal static class Program
+    public static class Program
     {
-        static Color[] colors = {
-            Color.FromArgb(23, 143, 49), Color.FromArgb(58, 219, 94, 86), Color.FromArgb(94, 255, 129, 100), Color.FromArgb(202, 202, 202, 80), Color.FromArgb(255, 255, 255, 100)
+        public static Color[] colors = {
+            Color.FromArgb(41, 255, 65), Color.FromArgb(90, 232, 107), Color.FromArgb(125, 255, 140), Color.FromArgb(159, 142, 147), Color.FromArgb(237, 230, 232)
         };
 
         [STAThread]

@@ -16,5 +16,10 @@ namespace SuperJogoDaVelha
         {
             InitializeComponent();
         }
+
+        private void JogoDaVelhaForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

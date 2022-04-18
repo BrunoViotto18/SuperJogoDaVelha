@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomButton.Designer.cs">
+      <DependentUpon>CustomButton.cs</DependentUpon>
+    </Compile>
     <Compile Include="JogoDaVelha.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -57,6 +63,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CustomButton.resx">
+      <DependentUpon>CustomButton.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JogoDaVelha.resx">
       <DependentUpon>JogoDaVelha.cs</DependentUpon>
     </EmbeddedResource>
