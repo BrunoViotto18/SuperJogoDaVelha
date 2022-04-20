@@ -47,7 +47,7 @@ namespace SuperJogoDaVelha
             }
         }
 
-
+        // Construtor
         public JogoDaVelha()
         {
             InitializeComponent();
@@ -175,7 +175,7 @@ namespace SuperJogoDaVelha
             boxes[pbXY[0], pbXY[1]] = currentUser;
 
             // Obtém o filename da imagem desejada
-            string filename = $"C:\\Users\\Aluno\\Desktop\\SuperJogoDaVelha\\X.png";
+            string filename = $".\\X.png";
             if (currentUser == (int)box.O)
                 filename = $"C:\\Users\\Aluno\\Desktop\\SuperJogoDaVelha\\O.png";
 
@@ -244,6 +244,7 @@ namespace SuperJogoDaVelha
                     Winner = boxes[1, 1];
             }
         }
+
 
 
         // INITIALIZE
