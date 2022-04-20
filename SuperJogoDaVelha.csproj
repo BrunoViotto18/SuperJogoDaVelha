@@ -52,22 +52,17 @@
     <Compile Include="CustomButton.Designer.cs">
       <DependentUpon>CustomButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="JogoDaVelha.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Include="JogoDaVelhaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="JogoDaVelhaForm.Designer.cs">
       <DependentUpon>JogoDaVelhaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="JogoDaVelhaLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomButton.resx">
       <DependentUpon>CustomButton.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="JogoDaVelha.resx">
-      <DependentUpon>JogoDaVelha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JogoDaVelhaForm.resx">
       <DependentUpon>JogoDaVelhaForm.cs</DependentUpon>

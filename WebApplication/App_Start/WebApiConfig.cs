@@ -15,15 +15,13 @@ namespace WebApplication
             // Rotas de API Web
             config.MapHttpAttributeRoutes();
 
-            SuperJogoDaVelhaEntities entities = new SuperJogoDaVelhaEntities(); 
-
             config.Routes.MapHttpRoute(
                 name: "User",
                 routeTemplate: "api/login/{username}/{senha}",
                 new
                 {
                     controller = "User",
-                    nome = string.Empty,
+                    username = string.Empty,
                     senha = string.Empty
                 }
             );
